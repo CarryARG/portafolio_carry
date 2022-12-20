@@ -10,7 +10,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <!--favicon-->
-        <link rel="shortcut icon" href="http://drive.google.com/uc?export=view&id=1CRJeGzwL9-jFyxbImid2R7EvMRQcr1nN">
+        <link rel="shortcut icon" href="./imagenes/mate.ico">
         <!--fuente modo god-->
         <link rel="stylesheet" href="./css/estilos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,17 +20,44 @@
     <body class="container-fluid p-0">
         <main>
             <!--fondo de inicio-->
-            <section class="container-fluid" id="hero">
-                <div class="tituloIndex container d-flex flex-column"> <!--probar cover en class-->
+            <div class="container-fluid principal p-0">
+                <img class="container-fluid imagenFondoPrincipal p-0" src="./imagenes/imagen-index.jpg">    
+                <div class="container-fluid p-0 capa">
+                </div>   
+            </div>
+            <!--titulo fondo-->
+              <div class="tituloIndex container d-flex flex-column">
                     <p>BIENVENIDOS A MI
                     <br>
-                        <p class="gaming">PORTAFOLIO</p>
+                        <p class="tituloIndex2">PORTAFOLIO</p>
                     </p>
                 </div>
-                <img class="videoZelda" src="./imagenes/imagen-index.jpg">    
-                <div class="capa">   
-                </div>  
-            </section>
+            <!--barra de navegacion sticky-->
+            <div id="encabezado">
+                <nav class="navbar navbar-expand-lg navbar-light position-sticky container-fluid" style="background-color: #D2B6C8; position: sticky; top: 0;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><iconify-icon icon="game-icons:punch" width="50" height="50" alt="logoInicio"></iconify-icon></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Calculadora</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link disabled" href="#">MRU (Proximamente)</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link disabled" href="#">MRUV (Proximamente)</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p><p>asdfasdf</p></div>
+            </div>
+            
             <!-- <div class="container redesSociales1 d-flex flex-row boxRedes1">
                     <div class="col-5 col-sm-5 col-md-4 col-xxl-6 col-lg-6 boxSigue">SIGUE NUESTRAS REDES SOCIALES</div>
                     <div class="col-2 col-sm-2 col-md-2 col-xxl-1 col-lg-1 ">
@@ -47,38 +74,6 @@
                     </div>
             </div> -->
         </main>
-		    <!--encabezado
-        <header>
-            <nav class="container-fluid position-fixed navbar navbar-expand-lg justify-content-around align-content-around" style="background-color: #012644">
-                <button class="navbar-toggler navbar-light container" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="encabezado" class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarScroll">                       
-                        <ul class="navbar-nav me-auto mb-0 m-2 container justify-content-around navbar-nav-scroll" style="--bs-scroll-height: 230px;">
-                            <li class="nav-item box">
-                                <a class="navbar-brand active" aria-current="page" href="#"><img src="http://drive.google.com/uc?export=view&id=1JT0YLjmlFnsDHVQtJKRh4liNzjxZD8y7" alt="logoInicio" class="logoInicio"></a>
-                            </li>
-                            <li class="nav-item box">
-                                <a class="nav-link" aria-current="page" href="./paginas/juegos.html">JUEGOS</a>
-                            </li>
-                            <li class="nav-item box">
-                                <a class="nav-link" aria-current="page" href="./paginas/plataformas.html">PLATAFORMAS</a>
-                            </li>
-                            <li class="nav-item box">
-                                <a class="nav-link" aria-current="page" href="./paginas/tiendas.html">TIENDAS</a>
-                            </li>
-                            <li class="nav-item box">
-                                <a class="nav-link" aria-current="page" href="./paginas/noticias.html">NOTICIAS</a>
-                            </li>
-                            <li class="nav-item box">
-                                <a class="nav-link" aria-current="page" href="./paginas/soporte.html">SOPORTE</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header> -->
         <!-- <article>
             <section>
                 <div class="d-flex justify-content-center align-items-center">
@@ -155,7 +150,7 @@
                 </section>
             </div>
         </article> -->
-        <br>
+
         <!-- <footer class="container-fluid pieDePagina">
             <div class="container flex-row">
                 <div class="container redesSocialesPie d-flex flex-row boxRedes1">
@@ -182,6 +177,7 @@
                 </div>
             </div>
         </footer> -->
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
         <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
