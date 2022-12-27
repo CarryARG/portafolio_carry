@@ -20,18 +20,16 @@
     <body class="container-fluid p-0">
         <main>
             <!--fondo de inicio-->
-            <div class="container-fluid principal p-0">
-                <img class="container-fluid imagenFondoPrincipal p-0" src="./imagenes/imagen-index.jpg">    
+            <div id="imagenGlitch" class="container-fluid principal p-0">
+                    
                 <div class="container-fluid p-0 capa">
                 </div>   
             </div>
             <!--titulo fondo-->
-              <div class="tituloIndex container d-flex flex-column">
-                    <p>BIENVENIDOS A MI
-                    <br>
-                        <p class="tituloIndex2">PORTAFOLIO</p>
-                    </p>
-                </div>
+            <div class="tituloIndex container d-flex flex-column">
+                <h2 class="glitch" data-text="BIENVENIDOS A MI PORTAFOLIO">BIENVENIDOS A MI PORTAFOLIO
+                </h2>
+            </div>
             <!--barra de navegacion sticky-->
             <div id="encabezado">
                 <nav class="navbar navbar-expand-lg navbar-light position-sticky container-fluid" style="background-color: #D2B6C8; position: sticky; top: 0;">
@@ -177,6 +175,26 @@
                 </div>
             </div>
         </footer> -->
+        
+        <script type="text/javascript">
+            let bg = document.getElementById('imagenGlitch');
+            let count = 20;
+            for (let i = 0; i < count; i++){
+                let glitchBox = document.createElement('div')
+                    glitchBox.className = 'box';
+                    bg.appendChild(glitchBox);
+            }
+            setInterval(function(){
+            let glitch = document.getElementsByClassName('box');
+            for (let i = 0; i < glitch.length; i++){
+                glitch[i].style.left = Math.floor(Math.random()*100) + 'vw';
+                glitch[i].style.top = Math.floor(Math.random()*100) + 'vh';
+                glitch[i].style.width = Math.floor(Math.random()*400) + 'px';
+                glitch[i].style.height = Math.floor(Math.random()*5) + 'px';
+                glitch[i].style.backgroundPosition = Math.floor(Math.random()*50) + 'px';
+            }
+            },200)
+        </script>
         <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
         <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
